@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: codebank-conf
+data:
+  env: |
+    host=postgres-postgresql
+    port=5432
+    user=postgres
+    password=qiD4JgDwl9
+    dbname=codebank
+    KafkaBootstrapServers=
+    KafkaTransactionsTopic=payments
+    security.protocol=SASL_SSL
+    sasl.mechanisms="PLAIN"
+    sasl.username=
+    sasl.password=
